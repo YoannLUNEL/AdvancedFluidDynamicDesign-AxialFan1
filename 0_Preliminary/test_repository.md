@@ -126,10 +126,10 @@ $$
 \left(\frac{s}{l}\right)_{\text{opt}} = \frac{C_{L,\text{target}} + C_D \tan\beta_\infty}{2 \cos\beta_\infty (\tan\beta_1 - \tan\beta_2)} = \mathbf{3.601} \quad (\sigma = 0.278)
 $$
 
-Using **Howell's correlation** for a circular-arc camber line ($a/l = 0.5$, rotor exponent $n = 0.5$) and assuming zero incidence ($i = 0^\circ \implies \beta'_1 = \beta_1$), the camber angle ($\theta$), nominal deviation ($\delta^*$), blade angles ($\beta'_1, \beta'_2$), and stagger angle ($\xi$) are computed as:
+Using **Howell's correlation** for a circular-arc camber line ($a/l = 0.5$, rotor exponent $n = 0.5$) and assuming zero incidence ($i = 0^\circ \implies \beta'_1 = \beta_1$), the camber angle ($\theta$), nominal deviation ($\delta^{\ast}$), blade angles ($\beta'_1$ and $\beta'_2$), and stagger angle ($\xi$) are computed as:
 
 $$
-m = 0.23\left(\frac{2a}{l}\right)^2 + \frac{\beta_2}{500} = 0.3683 \quad ; \quad \theta = \frac{\epsilon^*}{1 - m(s/l)^n} \quad ; \quad \delta^* = m\theta\left(\frac{s}{l}\right)^n
+m = 0.23\left(\frac{2a}{l}\right)^2 + \frac{\beta_2}{500} = 0.3683 \quad ; \quad \theta = \frac{\epsilon^{\ast}}{1 - m(s/l)^n} \quad ; \quad \delta^{\ast} = m\theta\left(\frac{s}{l}\right)^n
 $$
 
 The table below compares the initial cascade ($DF = 0.50$) and the optimized design ($C_L = 1.00$) for **$Z = 8$ blades**:
