@@ -20,6 +20,7 @@ The nominal operating point is calibrated with a benchmark of commercial fans (s
 | Air Dynamic Viscosity | $\mu$ | $1.8 \times 10^{-5}$ | Pa·s |
 
 Total Pressure rise is found using the following formula  ($\Delta P_0 = \Delta P_{\text{stat}} + \frac{1}{2}\rho c_x^2$). Using the values of the Noctua, we found that for 95m³/h, $P_{stat}$=0.5mmH20 (4,9Pa) and $P_{dyn}$ = 8 Pa.
+![Noctua fan](images/noctua%20fan.png)
 
 ### 1.2 Mean-Radius Kinematic Analysis (RMS)
 
@@ -63,6 +64,7 @@ Dimensional analysis characterizes the aerodynamic similarity of the fan and val
   $$\Omega_s = \frac{\omega Q^{1/2}}{(\Delta P_0 / \rho)^{3/4}} = \mathbf{5.1279}$$
   (Since $\Omega_s > 2.5$, this confirms that an **axial fan** architecture is the optimal choice for these high-flow, low-pressure specifications.)
 
+![Cordier diagram](images/cordier.png)
 ---
 
 ## 2. Geometric Description of the Axial Fan Components
