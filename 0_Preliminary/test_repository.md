@@ -2,7 +2,7 @@
 
 ## 1. Specifications and Dimensionless Parameters
 
-The objective of this project is to design an axial cooling fan for a standard 110 mm PC case, achieving an optimal balance between airflow, moderate static pressure, and low acoustic noise.
+The objective of this project is to design an axial cooling fan for a standard 120 mm PC case.
 
 ### 1.1 Design Specifications
 
@@ -10,16 +10,16 @@ The nominal operating point is calibrated with a benchmark of commercial fans (s
 
 | Parameter | Symbol | Value | Unit |
 | :--- | :---: | :---: | :---: |
-| Rotor Outer Diameter (Tip) | $D$ | 110.0 | mm |
+| Rotor Outer Diameter (Tip) | $D$ | 120.0 | mm |
 | Hub Diameter | $D_h$ | 50.0 | mm |
 | Number of Blades | $Z$ | 8 | // |
 | Nominal Rotational Speed | $N$ ($\omega$) | 1800 - 188.50 | rpm - rad/s |
 |  Flow Rate | $Q$ | 95 - 0.02638 | m³/h - m³/s |
 | Target Total Pressure Rise | $\Delta P_0$ | 13.0 | Pa |
-| Air Density at 20 °C | $\rho$ | 1.22 | kg/m³ |
+| Air Density at 20 °C | $\rho$ | 1.2 | kg/m³ |
 | Air Dynamic Viscosity | $\mu$ | $1.8 \times 10^{-5}$ | Pa·s |
 
-Total Pressure rise is found using the following formula  ($\Delta P_0 = \Delta P_{\text{stat}} + \frac{1}{2}\rho c_x^2$). Using the values of the Noctua, we found that for 95m³/h, $P_{dyn}$=0.5mmH20 (4,9Pa) and $P_{stat}$ = 8 Pa.
+Total Pressure rise is found using the following formula  ($\Delta P_0 = \Delta P_{\text{stat}} + \frac{1}{2}\rho c_x^2$). Using the values of the Noctua, we found that for 95m³/h, $P_{stat}$=0.5mmH20 (4,9Pa) and $P_{dyn}$ = 8 Pa.
 
 ### 1.2 Mean-Radius Kinematic Analysis (RMS)
 
@@ -76,7 +76,7 @@ The fan assembly consists of four main mechanical and aerodynamic sub-components
 
 ---
 
-## 3. Materials and Characteristics — Justification
+## 3. Materials and Characteristics / Justification
 
 Material selection is driven by three core requirements: **high stiffness under centrifugal loading** (to maintain tight tip clearances and prevent creep), **low rotational inertia**, and **vibration damping**. We choose materials used for the Noctua and the Corsair. 
 
@@ -116,7 +116,7 @@ For $Z = 8$ blades, the circumferential pitch at the mean radius is $s = \frac{2
 * **Ideal lift coefficient ($C_D = 0$):** $C_{L,0} = 2\left(\frac{s}{l}\right)\cos\beta_\infty(\tan\beta_1 - \tan\beta_2) = \mathbf{1.585}$
 * **Actual lift coefficient ($C_D = 0.02$):** $C_L = C_{L,0} - C_D\tan\beta_\infty = \mathbf{1.528}$
 
-**Critical Assessment:** Although $DF = 0.50$ satisfies the diffusion limit, the resulting lift coefficient ($C_L = 1.528$) is **too high** compared to the recommended limit ($C_L \le 1.0$). At low Reynolds numbers ($Re_D \approx 2.26 \times 10^4$), such excessive aerodynamic loading would trigger premature stall and severe efficiency drops.
+Although $DF = 0.50$ satisfies the diffusion limit, the resulting lift coefficient ($C_L = 1.528$) is too high (deviate too much the airflow) compared to the recommended limit ($C_L \le 1.0$). With low Reynolds numbers it can cause stall and severe efficiency drops.
 
 ### 4.3 Solidity Optimization for $C_L = 1.0$ and Blade Geometry (Howell's Rule)
 
@@ -145,7 +145,7 @@ The table below compares the initial cascade ($DF = 0.50$) and the optimized des
 | Camber angle ($\theta$) | 19.42° | **9.29°** |
 | Deviation angle ($\delta^*$) | 16.63° | **6.50°** |
 | Blade inlet angle ($\beta'_1$) | 71.95° | **71.95°** |
-| Blade outlet angle ($\beta'_2 = \beta_2 - \delta^*$) | 69.15° | **69.16°** |
+| Blade outlet angle ($\beta'_2 = \beta_2 - \delta^*$) | 52.53° | **62.66°** |
 | Stagger angle ($\xi = \frac{\beta'_1 + \beta'_2}{2}$) | 62.24° | **73.81°** |
 
-Optimizing the chord to $l = 10.03\text{ mm}$ lowers the Diffusion Factor to **$DF = 0.3765$**—providing a wide safety margin against flow separation—and reduces the required camber to **$9.29^\circ$**. We use theses values to design our propellers (CAD) and for our simulation (CFD).
+Optimizing the chord to $l = 10.03\text{ mm}$ lowers the Diffusion Factor to **$DF = 0.3765$**/providing a wide safety margin against flow separation/and reduces the required camber to **$9.29^\circ$**. We use theses values to design our impellers (CAD) and for our simulation (CFD).
