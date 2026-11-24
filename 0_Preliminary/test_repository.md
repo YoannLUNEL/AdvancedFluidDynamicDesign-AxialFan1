@@ -12,7 +12,7 @@ The nominal operating point is calibrated with a benchmark of commercial fans (s
 | :--- | :---: | :---: | :---: |
 | Rotor Outer Diameter (Tip) | $D$ | 110.0 | mm |
 | Hub Diameter | $D_h$ | 50.0 | mm |
-| Number of Blades | $Z$ | 8 | — |
+| Number of Blades | $Z$ | 8 | // |
 | Nominal Rotational Speed | $N$ ($\omega$) | 1800 - 188.50 | rpm - rad/s |
 |  Flow Rate | $Q$ | 95 - 0.02638 | m³/h - m³/s |
 | Target Total Pressure Rise | $\Delta P_0$ | 13.0 | Pa |
