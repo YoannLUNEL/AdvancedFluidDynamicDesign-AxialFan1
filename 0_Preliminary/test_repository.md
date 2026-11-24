@@ -118,9 +118,9 @@ For $Z = 8$ blades, the circumferential pitch at the mean radius is $s = \frac{2
 
 Although $DF = 0.50$ satisfies the diffusion limit, the resulting lift coefficient ($C_L = 1.528$) is too high (deviate too much the airflow) compared to the recommended limit ($C_L \le 1.0$). With low Reynolds numbers it can cause stall and severe efficiency drops.
 
-### 4.3 Solidity Optimization for $C_L = 1.0$ and Blade Geometry (Howell's Rule)
+### 4.3 Solidity Optimization for $C_L = 1$ and Blade Geometry (Howell's Rule)
 
-To bring the lift coefficient down to **$C_L = 1.00$**, the pitch-to-chord ratio $s/l$ is reduced (increasing the chord length $l$ and solidity $\sigma$) by inverting the lift equation:
+To bring the lift coefficient down to **$C_L = 1$**, the pitch-to-chord ratio $s/l$ is reduced (increasing the chord length $l$ and solidity $\sigma$) by inverting the lift equation:
 
 $$
 \left(\frac{s}{l}\right)_{\text{opt}} = \frac{C_{L,\text{target}} + C_D \tan\beta_\infty}{2 \cos\beta_\infty (\tan\beta_1 - \tan\beta_2)} = \mathbf{3.601} \quad (\sigma = 0.278)
