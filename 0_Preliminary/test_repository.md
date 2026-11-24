@@ -81,7 +81,7 @@ The fan assembly consists of four main mechanical and aerodynamic sub-components
 Material selection is driven by three core requirements: **high stiffness under centrifugal loading** (to maintain tight tip clearances and prevent creep), **low rotational inertia**, and **vibration damping**. We choose materials used for the Noctua and the Corsair. 
 
 | Component | Recommended Industrial Material | Technical Justification |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | **Impeller (Hub + Blades)** | **LCP-GF30** (Liquid Crystal Polymer) or **PBT-GF30**  | High Young's modulus minimizes radial elongation under centrifugal force and excellent dimensional stability and fatigue resistance. |
 | **Frame (Shroud)** | **PBT / ABS-GF30** (30% glass-fiber reinforced)  | Optimal stiffness-to-cost ratio and good structural rigidity for case mounting. |
 | **Bearings** | **Fluid Dynamic Bearing (FDB / SSO2)** or miniature ball bearings | Low friction, long service life ($> 150,000\text{ h}$ industrially), and quiet  at 1800 rpm. |
