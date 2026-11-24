@@ -70,7 +70,7 @@ Dimensional analysis characterizes the aerodynamic similarity of the fan and val
 The fan assembly consists of four main mechanical and aerodynamic sub-components designed to fit a standard $120 \times 120 \times 25\text{ mm}$ PC mounting envelope (105 mm mounting hole spacing with four $\varnothing 4.3\text{ mm}$ holes):
 
 1. **Hub:** Central cylindrical core with an outer diameter of $D_h = 50\text{ mm}$ (hub-to-tip ratio $\nu = D_h / D = 0.417$). It houses the brushless DC motor (12 V), permanent magnets, and bearing assembly, while providing structural support for the blade roots.
-2. **Impeller Blades:** A set of $Z = 8$ twisted airfoil blades extending from the hub ($r_h = 25\text{ mm}$) to the tip ($r_t = 60\text{ mm}$), giving a blade span of $h = 35\text{ mm}$. 
+2. **Impeller Blades:** A set of $Z = 8$ twisted airfoil blades extending from the hub ($r_h = 25\text{ mm}$) to the tip ($r_t = 60\text{ mm}$), so the blade span is equal to $h = 35\text{ mm}$. 
 3. **Frame / Shroud:** Outer square housing ($120 \times 120\text{ mm}$) incorporating an internal cylindrical duct. A minimal **radial tip clearance** ($\approx 0.5\text{ to }1.0\text{ mm}$) is maintained between the blade tips and the shroud to prevent mechanical contact while minimizing tip leakage vortices.
 4. **Support Struts:** Four thin stator struts connecting the rear motor mount to the outer frame. Their cross-section is streamlined to minimize wake drag and tonal noise from rotor–stator interaction.
 
